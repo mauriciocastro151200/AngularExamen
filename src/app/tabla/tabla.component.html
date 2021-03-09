@@ -1,0 +1,86 @@
+<div class="row bg-light">
+    <div class="col-12">
+        <div class="card bg-light">
+            <div class="card-header bg-info">
+                <h1 class="text-center"><b>Inventario</b></h1>
+            </div>
+<table class="table">
+  <thead class="table-info">
+    <tr>
+      <th scope="col" class="text-center">Id</th>
+      <th scope="col" class="text-center">Nombre Producto</th>
+      <th scope="col" class="text-center">Marca</th>
+      <th scope="col" class="text-center">Modelo</th>
+      <th scope="col" class="text-center">Costo</th>
+      <th scope="col" class="text-center">Existencias</th>
+      <th scope="col" class="text-center">Disponibilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let inventario of inventarios">
+      
+      <th scope="row" class="text-center">
+        <span *ngIf = "inventario.existencias == 0" style = "color: red">
+          {{inventario.idMercancia}}
+        </span>
+        <span *ngIf = "inventario.existencias != 0">
+          {{inventario.idMercancia}}
+        </span>
+      </th>
+
+      <td class="text-center"> 
+        <span *ngIf = "inventario.existencias == 0" style = "color: red">
+          {{inventario.nombre}}
+        </span>
+        <span *ngIf = "inventario.existencias != 0">
+          {{inventario.nombre}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "inventario.existencias == 0" style = "color: red">
+          {{inventario.marca}}
+        </span>
+        <span *ngIf = "inventario.existencias != 0">
+          {{inventario.marca}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "inventario.existencias == 0" style = "color: red">
+          {{inventario.modelo}}
+        </span>
+        <span *ngIf = "inventario.existencias != 0">
+          {{inventario.modelo}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "inventario.existencias == 0" style = "color: red">
+          ${{inventario.costo}}
+        </span>
+        <span *ngIf = "inventario.existencias != 0">
+          ${{inventario.costo}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "inventario.existencias == 0" style = "color: red">
+          {{inventario.existencias}}
+        </span>
+        <span *ngIf = "inventario.existencias != 0">
+          {{inventario.existencias}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "inventario.existencias == 0" style = "color: red"> AGOTADO</span>
+        <span *ngIf = "inventario.existencias != 0">DISPONIBLE</span>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>

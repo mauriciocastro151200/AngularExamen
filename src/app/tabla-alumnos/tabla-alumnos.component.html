@@ -1,0 +1,86 @@
+<div class="row bg-light">
+    <div class="col-12">
+        <div class="card bg-light">
+            <div class="card-header bg-info">
+                <h1 class="text-center"><b>Listado de Alumnos</b></h1>
+            </div>
+<table class="table">
+  <thead class="table-info">
+    <tr>
+      <th scope="col" class="text-center">Matrícula</th>
+      <th scope="col" class="text-center">Nombre del Alumno</th>
+      <th scope="col" class="text-center">Apellido Paterno</th>
+      <th scope="col" class="text-center">Apellido Materno</th>
+      <th scope="col" class="text-center">Grupo</th>
+      <th scope="col" class="text-center">Promedio</th>
+      <th scope="col" class="text-center">Estatus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let alumnos of alumno">
+      
+      <th scope="row" class="text-center">
+        <span *ngIf = "alumnos.promedio < 7.5" style = "color: red">
+          {{alumnos.idAlumno}}
+        </span>
+        <span *ngIf = "alumnos.promedio > 7.4">
+          {{alumnos.idAlumno}}
+        </span>
+      </th>
+
+      <td class="text-center"> 
+        <span *ngIf = "alumnos.promedio < 7.5" style = "color: red">
+          {{alumnos.nombre}}
+        </span>
+        <span *ngIf = "alumnos.promedio > 7.4">
+          {{alumnos.nombre}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "alumnos.promedio < 7.5" style = "color: red">
+          {{alumnos.apellidoP}}
+        </span>
+        <span *ngIf = "alumnos.promedio > 7.4">
+          {{alumnos.apellidoP}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "alumnos.promedio < 7.5" style = "color: red">
+          {{alumnos.apellidoM}}
+        </span>
+        <span *ngIf = "alumnos.promedio > 7.4">
+          {{alumnos.apellidoM}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "alumnos.promedio < 7.5" style = "color: red">
+          {{alumnos.grupo}}
+        </span>
+        <span *ngIf = "alumnos.promedio > 7.4">
+          {{alumnos.grupo}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "alumnos.promedio < 7.5" style = "color: red">
+          {{alumnos.promedio}}
+        </span>
+        <span *ngIf = "alumnos.promedio > 7.4">
+          {{alumnos.promedio}}
+        </span>
+      </td>
+
+      <td class="text-center">
+        <span *ngIf = "alumnos.promedio < 7.5" style = "color: red">REPROBADO</span>
+        <span *ngIf = "alumnos.promedio > 7.4">APROBADO</span>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>

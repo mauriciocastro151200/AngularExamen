@@ -1,13 +1,89 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Mypet3</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
+<!DOCTYPE html>
+<html lang="es">
+
+  <link rel="shortcut icon" href="./assets/media/MyPet7.png" />
+    <title>Veterinaria MyPet</title>
+      
+      <body class="bg-light">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#1E2749">
+            <div class="container">
+                <img src="./assets/media/MyPet7.png" alt="" width="90">
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link"><h4><b>Home</b></h4>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link"><h4><b>Mascotas</b></h4>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link"><h4><b>Productos</b></h4>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link"><h4><b>Conocenos</b></h4>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    
+    <!--Slider-->
+      <div id="demo" class="carousel slide" data-ride="carousel">
+       <ul class="carousel-indicators">
+           <li data-target="#demo" data-slide-to="0" class="active"></li>
+           <li data-target="#demo" data-slide-to="1"></li>
+           <li data-target="#demo" data-slide-to="2"></li>
+       </ul>
+       <article class="carousel-inner">
+
+           <figure class="carousel-item active">
+                <img src="./assets/media/Slider/slider11.jpg" alt="" width="100%" class="d-block w-100">
+            </figure>
+
+            <figure class="carousel-item">
+                <img src="./assets/media/Slider/slider12.jpg" alt="" width="100%" class="d-block w-100">
+            </figure>
+
+            <figure class="carousel-item">
+                <img src="./assets/media/Slider/slider13.jpg" alt="" width="100%" class="d-block w-100">
+            </figure>
+
+       </article>
+       
+       <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>   
+   </div>
+   <app-root></app-root>
+
+      <!-- Footer -->
+        <footer class="container-fluid" style="background-color:#1E2749">
+           <div class="row">
+                <article class="col-12">
+                    <br>
+                    <h4 class="text-white text-center"><b>Derechos Reservados</b></h4>
+                    <p class="text-white text-center"><b>Copyright © 2021 · Mauricio Castro</b></p>
+                </article>
+           </div>   
+    </footer>
+
 </body>
 </html>
+
